@@ -1,0 +1,220 @@
+.card {
+  position: relative;
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  border-radius: inherit;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.hovereffect h2 {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 6em 0;
+  opacity: 0;
+}
+
+.hovereffect a.info {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 50px 0 0;
+  padding: 7px 14px;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.hovereffect:hover h2,
+.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translatey(0);
+  -webkit-transform: translatey(0);
+  transform: translatey(0);
+}
+
+.hovereffect:hover a.info {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.rgba-gradient {
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(213, 15, 61, 0.6),
+    rgba(13, 17, 198, 0.69) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(213, 15, 61, 0.6),
+    rgba(13, 17, 198, 0.69) 100%
+  );
+  background: linear-gradient(
+    to 45deg,
+    rgba(213, 15, 61, 0.6),
+    rgba(13, 17, 198, 0.69) 100%
+  );
+}
+
+.rgba-gradient2 {
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(72, 15, 144, 0.4) 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    45deg,
+    from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%)
+  );
+  background: linear-gradient(
+    to 45deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(72, 15, 144, 0.4) 100%
+  );
+}
+
+.profile-page {
+  .card-profile {
+    margin-top: -150px;
+
+    .card-profile-image {
+      position: relative;
+      //min-height: 130px;
+
+      img {
+        max-width: 180px;
+        border-radius: $border-radius;
+        @extend .shadow;
+        transform: translate(-50%, -30%);
+        position: absolute;
+        left: 50%;
+        transition: $transition-base;
+
+        &:hover {
+          transform: translate(-50%, -33%);
+        }
+      }
+    }
+
+    .card-profile-stats {
+      padding: 1rem 0;
+
+      > div {
+        text-align: center;
+        margin-right: 1rem;
+        padding: 0.875rem;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .heading {
+          font-size: 1.1rem;
+          font-weight: bold;
+          display: block;
+        }
+        .description {
+          font-size: 0.875rem;
+          color: $gray-500;
+        }
+      }
+    }
+
+    .card-profile-actions {
+      padding: 0.875rem;
+    }
+
+    @include media-breakpoint-down(xs) {
+      .card-profile-actions {
+        margin-top: 110px;
+      }
+    }
+
+    @include media-breakpoint-between(sm, md) {
+      .card-profile-stats {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+// Card with blockquotes
+
+.card {
+  .card-blockquote {
+    padding: 2rem;
+    position: relative;
+
+    .svg-bg {
+      display: block;
+      width: 100%;
+      height: 95px;
+      position: absolute;
+      top: -94px;
+      left: 0;
+    }
+  }
+}
+
+// Animated cards
+
+.card-lift--hover {
+  &:hover {
+    transform: translateY(-20px);
+    @include transition($transition-base);
+  }
+}
