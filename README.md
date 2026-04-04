@@ -3,8 +3,7 @@
 **A Social Network for Travellers**
 
 ### Home Screen
-![Home Screen](https://github.com/asimdaud9/travyWeb/raw/master/1Capture.PNG)
-![Home Screen](https://github.com/asimdaud9/travy_BSSE_final_year_project/blob/main/1Capture.PNG)
+![Home Screen](<img width="1366" height="738" alt="image" src="https://github.com/user-attachments/assets/36688cfc-c906-4157-8c0a-8c53203bb86b" />)
 
 
 ### Heatmaps
