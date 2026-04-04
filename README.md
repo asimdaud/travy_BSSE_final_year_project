@@ -3,14 +3,14 @@
 **A Social Network for Travellers**
 
 ### Home Screen
-![Home Screen](<img width="1366" height="738" alt="image" src="https://github.com/user-attachments/assets/36688cfc-c906-4157-8c0a-8c53203bb86b" />)
-
+<img width="1366" height="738" alt="image" src="https://github.com/user-attachments/assets/9cf402e4-f676-433f-8f4d-b4832ff3c2d4" />
 
 ### Heatmaps
-![Heatmaps](https://github.com/asimdaud9/travyWeb/raw/master/2Capture.PNG)
+<img width="1366" height="738" alt="image" src="https://github.com/user-attachments/assets/b58367ae-bb85-4bb3-b5c4-e977c17c63c6" />
 
 ### Groups
-![Groups](https://github.com/asimdaud9/travyWeb/raw/master/4Capture.PNG)
+<img width="1366" height="738" alt="image" src="https://github.com/user-attachments/assets/f56f1d9f-3840-417b-8c99-71c416e523bf" />
 
 ### User Profile
-![User Profile](https://github.com/asimdaud9/travyWeb/raw/master/Capture.PNG)
+<img width="1366" height="738" alt="image" src="https://github.com/user-attachments/assets/89c93353-af44-4e4a-b7a1-9b0363fc1004" />
+
